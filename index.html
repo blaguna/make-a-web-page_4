@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by  Benjamin Laguna</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+      <div>
+      <h1>Programming Notes</h1>
+    </div>
+    <div class="paragraph">
+      <h2 class="lesson">Stage 0</h2>
+        <div> Key Terms/Ideas 
+        </div>
+        <p><em>HTML</em>: HypertextMarkup Language
+        </p>
+        <p><em>HTTP</em>: Hypertext transfer protocol
+        </p>
+        <p><em>Tags</em>: These start and end a string of code, and give it a function to do something. Tags the browser to interpret the HTML into a specific type of element   
+        </p>
+        <p><em>Inline vs. Block</em>: In reference to whether the tag provides an output that is part of a continuous line vs. making an editable box of code.</p>
+        <p> <em>Inserting Comments</em>: To insert comments into the HTML code, you can use the appropriate tag, see 
+          <a href="http://www.w3schools.com/tags/tag_comment.asp"> here. </a>
+        </p>
+        <p><em>Head</em>: Element contains information that won't be displayed on the page
+        </p>
+        <p><em>Title</em>: Element normally sets the name of the browser tab
+        </p>
+        <p><em>Linking a webpage</em>: You can place the following code: a href="www.google.com" TEXT /a, or simply 
+          <a href="www.google.com"> Google </a> 
+        </p>
+        <p><em>Linking to an image</em>: You can linke to an image by placing an inline tag img src="link to an image.jpg" alt="text" style="something by something" or simply 
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Olympic_rings_without_rims.svg/342px-Olympic_rings_without_rims.svg.png" alt="olympic rings" height="42">
+        </p>
+    </div>
+    <div class="paragraph">
+      <h2 class="lesson"> Stage 1.1
+      </h2>
+      <div>
+        <p>
+          <em>Page Languages</em>: Overall, webpages are made up of HTML, CSS, and javascript which provide the structure, style, and interaction of elements within a page. 
+        </p>
+        <p>
+          <em>Format of a page</em>: It is reasonable to approach a page as a bunch of boxes within boxes, and each element can be broken down. An easy way to evaluate the structure is by using the web developer tools provided by a browser. 
+        </p>
+          <em>Breaking down the boxes</em>: You can approach these boxes by using the div tag, and then labeling each of these tags so as to read the code in a faster manner. 
+        <p>
+          <em>Creating/Analyzing code</em>: You can use scratchpad.io to see instant results of the HTML, but is slightly limited. You can use codepen.io to save and to incorporate css and js. Finally, you can use all of these features and more through sublime, a dedicated text editor. 
+        </p>
+      </div>
+    </div>
+    <div class="paragraph">
+      <h2 class="lesson">
+        Stage 1.2+1.3: Structured document+Adding CSS Style 
+      </h2>
+      <div>
+        <p> CSS: Code to control style of HTML
+        </p>
+        <p> Selector: basically gives a command to a specific element. For example, you can have a selector h1 {background-color: black; color: white;} to apply to every h1 element.
+        </p>
+        <p> Declaration: within brackets, which contains the comand of a selector. The declaration is made up of a property (background-color) and then a value of the property (black)
+        </p>
+        <p> Selecting by class: You can use div tag to select a certain type of class. Then you can use the style tag to define the elements of each of the div elements, by using .class-name
+        </p>
+        <div>
+          <h3>Including CSS:</h3> 
+          <ol>
+            <li>You can write CSS within the head of the HTML, best for simple elements.</li>
+            <li>You can link HTML to a separate CSS file. You basically link a CSS file, take for example main.css, and this will apply style to your document. Within the css file, you can assign a style like div{background-color: red;}</li>
+            <li>Style inline with HTML: Dont do this. It makes you rewrite a bunch of code.</li>
+          </ol> 
+        </div>
+        <div>
+           <p> Linking CSS to HTML: You can assign div tags classes, and then refer to them in css by using .lesson {}, and within that have a declaration with a value 
+           </p>
+           <p> Variations in CSS: there are often many ways to style something, for example with font color, you can use hex colors, font colors, etc. 
+           </p>
+           <p> Choosing the right type of element: regardless of the style, if you don't choose the right element, things will start to look wonky. In cases of text, using the h tag is more correct than using the div tag. 
+           </p>
+        </div>
+        <div>
+          <h3>Technical Notes on Boxes
+          </h3>
+          <p> HTML elements, like div elements, makeup boxes, and box sizing isn't trivial. To allows sizing to be flexible, you can either set sizes in terms of percentages, or use the box-sizing attribute to border-box for every element. 
+          </p>
+          <p> More on Div elements: these are block elements, so they take up the entire width of a page, and you can use the display:flex rule to allow div's to line up next to each other, rather than always having to stack. 
+          </p>
+          <ol>
+            <li>These are important items</li>
+            <li>And this is how they look</li>
+            <li>To Find more click 
+              <a href="http://www.w3schools.com/tags/tag_comment.asp"> here </a> 
+            </li>
+          </ol>
+        <p>Repetition and CSS: It is important to try to do the most as possible with the least amount of code, and to simplify when possible. Overall, the danger of repititon is that you can create conflicts with the CSS code, whereby you don't which priority rules are being used for which content. By avoiding repetition, you can avoid complicating things in the future with code, especially when you are trying to debug.</p>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
